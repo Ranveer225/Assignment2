@@ -24,9 +24,18 @@ public class HelloController {
         try {
 
             double interestRate = Double.parseDouble(annualInterestRate.getText()) / 100 / 12;
-
+             int years = Integer.parseInt(numberOfYears.getText());
+             double loan = Double.parseDouble(loanAmount.getText());
 // Text Fields values returned
+
+            double factor = 1;
+            for (int i = 0; i< years * 12; i++) {
+
+                factor *= (1 + interestRate);
+
+            }
+         double monthly = loan * interestRate / (1 - 1 / factor);
+            // Monthly payment being calculated
         }
     }
-
-    }
+}
