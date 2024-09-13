@@ -36,6 +36,9 @@ public class HelloController {
             }
          double monthly = loan * interestRate / (1 - 1 / factor);
             // Monthly payment being calculated
+
+            double total = monthly * years * 12;
+            // Total payment
         }
     }
 }
