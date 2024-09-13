@@ -19,5 +19,14 @@ public class HelloController {
     @FXML
     private TextField totalPayment;
 
+    @FXML
+    protected void calculateLoanPayment( ) {
+        try {
+
+            double interestRate = Double.parseDouble(annualInterestRate.getText()) / 100 / 12;
+
+// Text Fields values returned
+        }
+    }
 
     }
