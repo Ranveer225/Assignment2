@@ -27,3 +27,4 @@
 
     <Button text="Calculate" onAction="#calculateLoanPayment"/>
 </VBox>
+
